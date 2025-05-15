@@ -1,0 +1,15 @@
+Please run the commands in the provided order to avoid version conflicts. 
+!pip install gensim
+# Restart the session
+import gensim # open-source library for NLP topic modeling (to include LDA)
+from gensim import corpora
+from gensim.models.ldamodel import LdaModel
+
+import pandas as pd
+import numpy as np
+import re
+import matplotlib.pyplot as plt
+import seaborn as sns
+import ast # needed to convert strings to lists, required format for lda
+from gensim.models import CoherenceModel # for model performance monitoring under hyperparameter tuning
+from itertools import product # for hyperparameter tuning via looping through model iterations
